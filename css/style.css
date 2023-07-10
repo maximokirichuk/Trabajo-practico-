@@ -8,7 +8,10 @@
     --gris: dale un color gris (puedes usar este codigo #a7a5a5) 
     --negro: dale el color negro
     --primario: dale un color a tu gusto!!! */
-
+--blanco:white;
+--gris:grey;
+--negro:black;
+--primario: rgb(34, 46, 136);
 }
 
 /*! DESDE AQUI, NO TOQUES NADA!!!*/
@@ -72,7 +75,6 @@ img {
 }
 
 /*!!!!---- Desde aqui hasta abajo, debes crear el codigo!!! !!!!!*/
-
 /** Header **/
 /* crea la clase header: dale una imagen de fondo usando el banner-barberia.
 su altura sera de 60rem. Agrega luego este codigo:

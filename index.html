@@ -7,14 +7,67 @@
     <!-- Prefetch -->
     <link rel="prefetch" href="nosotros.html" as="document">
     <!-- Preload -->
-    <link rel="preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css"
+    <link rel="preload" href=css/style.css as="style">
+    <link rel="stylesheet" href=css/style.css>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href=css/style.css as="style">
+    <link rel="stylesheet" href=css/style.css>
 </head>
 <body>
+<header>
+
+<div class="contenedor">
+    <div class="barra">
+    <a class="logo" href="index.html">
+        <h1 class="logo__nombre">BarberShop</h1>
+    </a>
+
+<nav class="navegacion">
+<a href="nosotros.html" class="navegacion_enlace">Nosotros</a>
+<a href="cursos.html" class="navegacion_enlace">Cursos</a>
+<a href="contacto.html" class="navegacion_enlace">Contacto</a>
+</nav>
+</div>   
+</div>
+<div class="header__texto">
+    <h2>Cuidar tu imagen es nuestro trabajo</h2>
+    <p>Dejalo en manos de profesionales</p>
+</div>
+</header>
+
+<div class="header__texto">
+    <main class="blog">
+    <h3>Nuestras habilidades</h3>
+
+    <article class="entrada">
+        <div class="entrada__imagen">
+            <img class="img-entrada" src="img/img1.jpg" alt="">
+        </div>
+        <div class="entrada__contenido">
+            <h4>Cortes de cabello</h4>
+            <p>Tenemos un amplio catalogo de imágenes con cortes, para que siempre puedas decidir cual es tu mejor perfil.</p>
+            <a href="entrada.html" class="boton boton--primario">Leer mas</a>
+        </div>
+    </article>
+
+    <article class="entrada">
+<div class="entrada__contenido">
+    <h4>Recorte y emprolijamiento</h4>
+    <p>Cuida la forma de tu rostro sin dudar de la calidad</p>
+    <a href="entrada.html" class="boton boton--primario">Leer mas</a>
+</div>
+    </article>
+</div>
+</main>
+
+<aside class="asidebar">
+<h3>Cursos</h3>
+<ul class="no-padding"></ul>
+</aside>
+
+
+
 
     <!-- Crear un header, con la class "header" y dentro deben estar los 2 div que figuran aqui abajo -->
         <div > <!-- darle a este div la clase "contenedor" -->
