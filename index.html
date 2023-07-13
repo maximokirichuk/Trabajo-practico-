@@ -16,11 +16,10 @@
 </head>
 <body>
 <header>
-
 <div class="contenedor">
     <div class="barra">
     <a class="logo" href="index.html">
-        <h1 class="logo__nombre">BarberShop</h1>
+        <h1 class="logo__nombre no-margin centrar-texto">BarberShop</h1>
     </a>
 
 <nav class="navegacion">
@@ -32,14 +31,14 @@
 </div>
 <div class="header__texto">
     <h2>Cuidar tu imagen es nuestro trabajo</h2>
-    <p>Dejalo en manos de profesionales</p>
+    <p class="no-margin">Dejalo en manos de profesionales</p>
 </div>
+<h2 class="no-margin">Cuidar tu imagen es nuestro trabajo</h2>
 </header>
 
-<div class="header__texto">
+<div class="contenedor contenedor-principal">
     <main class="blog">
     <h3>Nuestras habilidades</h3>
-
     <article class="entrada">
         <div class="entrada__imagen">
             <img class="img-entrada" src="img/img1.jpg" alt="">
@@ -50,9 +49,12 @@
             <a href="entrada.html" class="boton boton--primario">Leer mas</a>
         </div>
     </article>
+    
 
     <article class="entrada">
-<div class="entrada__contenido">
+<div class="entrada__imagen"> 
+    <img src="img/img2.jpg" alt=""></div>
+<div class="entradacon"></div>
     <h4>Recorte y emprolijamiento</h4>
     <p>Cuida la forma de tu rostro sin dudar de la calidad</p>
     <a href="entrada.html" class="boton boton--primario">Leer mas</a>
@@ -63,11 +65,30 @@
 
 <aside class="asidebar">
 <h3>Cursos</h3>
-<ul class="no-padding"></ul>
+<ul class="cursos no-padding">
+    <h4 class="no-margin">Tecnicas de corte</h4>
+    <p class="widget-curso__label">Cupo:20 personas</p>
+    <a href="entrada.html" class="boton boton--secundario">Mas info</a>
+</ul>
+<ul class="widget-curso">
+    <h4 class="no-margin">Armado y perfilado de barba</h4>
+    <p class="widget-curso__label">Primer mes gratis!!</p>
+    <p class="widget-curso__label">Cupo:20 personas</p>
+    <a href="entrada.html" class="boton boton--secundario">Mas info</a>
+</ul>
 </aside>
+</div>
 
-
-
+<footer class="footer">
+    
+</footer>
+ <!-- crea aqui un footer con la clase "footer"
+    coloca dentro el mismo div de la clase contenedor que e encuentra en el header, junto con su contenido, dentro del footer
+    -->
+    
+    <script src="js/modernizr.js"></script>
+</body>
+</html>
 
     <!-- Crear un header, con la class "header" y dentro deben estar los 2 div que figuran aqui abajo -->
         <div > <!-- darle a este div la clase "contenedor" -->
