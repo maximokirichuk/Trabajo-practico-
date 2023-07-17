@@ -17,33 +17,68 @@
 <body>
     <!-- Copia aqui el header del index.html -->
 
-
+    <header>
+        <div class="contenedor">
+            <div class="barra">
+            <a class="logo" href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">BarberShop</h1>
+            </a>
+        
+        <nav class="navegacion">
+        <a href="nosotros.html" class="navegacion_enlace">Nosotros</a>
+        <a href="cursos.html" class="navegacion_enlace">Cursos</a>
+        <a href="contacto.html" class="navegacion_enlace">Contacto</a>
+        </nav>
+        </div>   
+        </div>
+        <div class="header__texto">
+            <h2>Cuidar tu imagen es nuestro trabajo</h2>
+            <p class="no-margin">Dejalo en manos de profesionales</p>
+        </div>
+        <h2 class="no-margin">Cuidar tu imagen es nuestro trabajo</h2>
+        </header>
     <!-- crea aqui un main con la class contenedor -->
-        <h3 >Contacto</h3> <!-- dale la class centrar-texto a este h3, y colocalo adentro del main-->
+    <main class="contenedor">
+        <h3 class="centrar-texto">Contacto</h3> <!-- dale la class centrar-texto a este h3, y colocalo adentro del main-->
 
-        <!-- crea aqui un div con la class "contacto-gb", pero no le agregues nada dentro -->
+    <div class="contacto-gb"></div>    <!-- crea aqui un div con la class "contacto-gb", pero no le agregues nada dentro -->
 
-        <!-- crea aqui un formulario: ponle la clase "formulario" 
+    <form class="formulario">  <!-- crea aqui un formulario: ponle la clase "formulario" 
         dentro, colocaras los div que estan a continuacion -->
         
-            <div> <!-- dale a este div la clase "campo" -->
-                <!-- crea un label, con la clase "campo__label" y con el texto Nombre -->
-                <!-- crea un input del tipo text, con la clase "campo__field" y con el placeholder "Ingrese su nombre" -->
+            <div class="campo"><!-- dale a este div la clase "campo" -->
+            <label class="campo__label">Nombre</label>    <!-- crea un label, con la clase "campo__label" y con el texto Nombre -->
+            <input type="text" class="campo__field" placeholder="Ingrese su nombre">    <!-- crea un input del tipo text, con la clase "campo__field" y con el placeholder "Ingrese su nombre" -->
             </div>
-            <div><!-- dale a este div la clase "campo" -->
-                <!-- crea un label, con la clase "campo label" y con el texto E-mail -->
-                <!-- crea un input del tipo text, con la clase "campo__field" y con el placeholder "Ingrese su Email" -->
+            <div class="campo"><!-- dale a este div la clase "campo" -->
+            <label class="campo__label">E-mail</label>    <!-- crea un label, con la clase "campo label" y con el texto E-mail -->
+            <input type="text" class="campo__field" placeholder="Ingrese su E-mail">    <!-- crea un input del tipo text, con la clase "campo__field" y con el placeholder "Ingrese su Email" -->
             </div>
-            <div ><!-- dale a este div la clase "campo" -->
-                <!-- crea un label, con la clase "campo label" y con el texto Mensaje -->
-                <!-- crea un textarea, con la clase "campo__field campo__field--textarea" -->
+            <div class="campo"><!-- dale a este div la clase "campo" -->
+            <label class="campo__label">Mensaje</label>    <!-- crea un label, con la clase "campo label" y con el texto Mensaje -->
+            <textarea class="campo__field--textarea"></textarea>    <!-- crea un textarea, con la clase "campo__field campo__field--textarea" -->
             </div>
-            <div><!-- dale a este div la clase "campo" -->
-                <!-- crea un input del tipo submit, con la clase "boton boton--primario" y con el value Enviar -->
+            <div class="campo"><!-- dale a este div la clase "campo" -->
+            <input type="submit" class="boton boton--primario" value="Enviar" > <!-- crea un input del tipo submit, con la clase "boton boton--primario" y con el value Enviar -->
             </div>
-         <!-- aqui deberia cerrar tu formulario-->
+         <!-- aqui deberia cerrar tu formulario--></form> 
     <!--Aqui deberia cerrar tu main-->
-
+    </main>
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+            <a class="logo" href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">BarberShop</h1>
+            </a>
+        
+        <nav class="navegacion">
+        <a href="nosotros.html" class="navegacion_enlace">Nosotros</a>
+        <a href="cursos.html" class="navegacion_enlace">Cursos</a>
+        <a href="contacto.html" class="navegacion_enlace">Contacto</a>
+        </nav>
+         </div>   
+        </div>
+    </footer>    
 <!-- Coloca Aqui el footer de index.html -->
     <script src="js/modernizr.js"></script>
 </body>
