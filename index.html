@@ -12,10 +12,10 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preload" href=css/style.css as="style">
-    <link rel="stylesheet" href=css/style.css>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
+<header class="header">
 <div class="contenedor">
     <div class="barra">
     <a class="logo" href="index.html">
@@ -60,24 +60,38 @@
     <a href="entrada.html" class="boton boton--primario">Leer mas</a>
 </div>
     </article>
-</div>
 </main>
+<aside class="sidebar">
+    <h3>Cursos</h3>
+    <ul class="cursos no-padding">
+        <!-- Primer item de la lista con la clase "widget-curso" -->
+        <li class="widget-curso">
+            <!-- Etiqueta h4 con el texto "Tecnicas de corte" y la clase "no-margin" -->
+            <h4 class="no-margin">Tecnicas de corte</h4>
+            <!-- Etiqueta p con el texto "Precio: primer mes gratis!!" y la clase "widget-curso__label" -->
+            <p class="widget-curso__label">Precio: primer mes gratis!!</p>
+            <!-- Etiqueta p con el texto "Cupo: 20 personas" y la clase "widget-curso__label" -->
+            <p class="widget-curso__label">Cupo: 20 personas</p>
+            <!-- Etiqueta "a" con la clase "boton boton--secundario" que nos lleva a entrada.html y el texto "Mas info" -->
+            <a class="boton boton--secundario" href="entrada.html">Mas info</a>
+        </li>
+        <!-- Fin del primer item de la lista -->
 
-<aside class="asidebar">
-<h3>Cursos</h3>
-<ul class="cursos no-padding">
-    <h4 class="no-margin">Tecnicas de corte</h4>
-    <p class="widget-curso__label">Cupo:20 personas</p>
-    <a href="entrada.html" class="boton boton--secundario">Mas info</a>
-</ul>
-<ul class="widget-curso">
-    <h4 class="no-margin">Armado y perfilado de barba</h4>
-    <p class="widget-curso__label">Primer mes gratis!!</p>
-    <p class="widget-curso__label">Cupo:20 personas</p>
-    <a href="entrada.html" class="boton boton--secundario">Mas info</a>
-</ul>
+        <!-- Segundo item de la lista con la clase "widget-curso" -->
+        <li class="widget-curso">
+            <!-- Etiqueta h4 con el texto "Armado y perfilado de barba" y la clase "no-margin" -->
+            <h4 class="no-margin">Armado y perfilado de barba</h4>
+            <!-- Etiqueta p con el texto "Precio: primer mes gratis!!" y la clase "widget-curso__label" -->
+            <p class="widget-curso__label">Precio: primer mes gratis!!</p>
+            <!-- Etiqueta p con el texto "Cupo: 20 personas" y la clase "widget-curso__label" -->
+            <p class="widget-curso__label">Cupo: 20 personas</p>
+            <!-- Etiqueta "a" con la clase "boton boton--secundario" que nos lleva a entrada.html y el texto "Mas info" -->
+            <a class="boton boton--secundario" href="entrada.html">Mas info</a>
+        </li>
+        <!-- Fin del segundo item de la lista -->
+    </ul>
+    <!-- Fin de la lista desordenada -->
 </aside>
-</div>
 
 <footer class="footer">
     <div class="contenedor">
@@ -91,78 +105,10 @@
     <a href="cursos.html" class="navegacion_enlace">Cursos</a>
     <a href="contacto.html" class="navegacion_enlace">Contacto</a>
     </nav>
-     </div>   
+    </div>   
     </div>
 </footer>    
 <script src="js/modernizr.js"></script>
 </body>
 </html>
 
-    <!-- Crear un header, con la class "header" y dentro deben estar los 2 div que figuran aqui abajo -->
-        <div > <!-- darle a este div la clase "contenedor" -->
-            <div> <!-- darle a este div la clase "barra" -->
-                <!-- crear aqui una etiqueta "a" con la clase "logo" y su href debe ser al "index.html" -->
-                <!-- colocar dentro, una etiqueta h1 que diga BarberShop, darle las clases logo__nombre , no margin y centrar texto -->
-
-                <nav> <!-- darle a este nav la clase "navegacion" -->
-                    <!-- crear 3 etiquetas "a". Dentro, cada una tendran su texto de "nosotros","cursos", "contacto". Cada una debe redireccionar a nosotros.html,cursos.html y contacto.html respectivamente Darle las clases navegacion_enlace -->
-                </nav>
-            </div>
-        </div>
-        <div> <!-- darle a este div la clase "header__texto" -->
-            <!-- crear un h2 que diga "Cuidar tu imagen es nuestro trabajo" y tenga la class no-margin -->
-            <!-- crear un p que diga "Dejalo en manos de profesionales" y tenga la class no-margin -->
-        </div>
-    <!-- aqui deberia cerrar tu header-->
-
-    <div> <!-- darle a este div la clase "contenedor contenedor-principal" -->
-        <!-- crear el main, con la clase blog -->
-            <h3>Nuestras Habilidades</h3> <!-- coloca este h3 debajo del main -->
-            <!-- crear 2 article: 
-
-            el primero debe contener lo siguiente:
-            -la clase es "entrada"
-            -un div con la clase "entrada__imagen" y dentro de ese div, una etiqueta img, con la clase "img-entrada",usando como fuente la img1
-            -un div con la class "entrada__contenido": dentro tiene 3 items:
-            1-un h4 que dice "Cortes de cabello" 
-            2-un parrafo con el texto "Tenemos un amplio catalogo de imagenes con cortes, para que siempre puedas decidir cual es tu mejor perfil." 
-            3-una etiqueta "a" que nos envia a "entrada.html" , y su clase es "boton boton--primario" , y su texto es "Leer mas"
-        
-            el segundo debe contener lo siguiente:
-            -la clase es "entrada"
-            -un div con la clase "entrada__imagen" y dentro de ese div, una etiqueta img con la clase "img-entrada" , usando como fuente la img2
-            -un div con la class "entrada__contenido": dentro tiene 3 items:
-            1-un h4 que dice "Recorte y emprolijamiento de barba" 
-            2-un parrafo con el texto "Cuida la forma de tu rostro sin dudar de la calidad" 
-            3-una etiqueta "a" que nos envia a "entrada.html" , y su clase es "boton boton--primario" , y su texto es "Leer mas"
-                    -->
-
-        <!-- aqui deberia estar la etiqueta de cierre de tu main-->
-
-
-        <aside> <!-- dale la clase sidebar a este aside-->
-            <!-- crea aqui una etiqueta h3 con el texto "Cursos" -->
-
-            <!-- crear aqui una lista desordenada (ul) con la class "cursos" y tmb que tenga la class "no-padding" -->
-                 <!-- crear aqui el primer item de la lista. Dale la clase "widget-curso"-->
-                    <!-- crear un h4 que diga "Tecnicas de corte" y su clase sea "no-margin" -->
-                     <!-- crear un p que diga "Precio: primer mes gratis!!" y su clase es "widget-curso__label" -->
-                    <!-- crear un p que diga "Cupo: 20 personas" y su clase es "widget-curso__label" -->
-                    <!-- crear un "a" con la clase "boton boton--secundario", que nos renvie a entrada.html y su texto sea "Mas info" -->
-             <!-- aqui debe cerrar el item de la lista -->
-
-                 <!-- crear aqui el segundo item de la lista. Dale la clase "widget-curso"-->
-                    <!-- crear un h4 que diga "Armado y perfilado de barba" y su clase sea "no-margin" -->
-                    <!-- crear un p que diga "Precio: primer mes gratis!!" y su clase es "widget-curso__label" -->
-                    <!-- crear un p que diga "Cupo: 20 personas" y su clase es "widget-curso__label" -->
-                    <!-- crear un "a" con la clase "boton boton--secundario", que nos renvie a entrada.html y su texto sea "Mas info" -->
-                <!-- aqui debe cerrar el item de la lista -->
-            <!-- aqui debe cerrar tu lista desordenada -->
-        </aside>
-    </div>
-    <!-- crea aqui un footer con la clase "footer"
-    coloca dentro el mismo div de la clase contenedor que e encuentra en el header, junto con su contenido, dentro del footer
-    -->
-    <script src="js/modernizr.js"></script>
-</body>
-</html>

@@ -12,6 +12,7 @@
 --gris:grey;
 --negro:black;
 --primario: rgb(34, 46, 136);
+--secundario:rgb(28, 100, 182);
 }
 
 /*! DESDE AQUI, NO TOQUES NADA!!!*/
@@ -82,13 +83,30 @@ su altura sera de 60rem. Agrega luego este codigo:
     background-repeat: no-repeat;
     background-position: center center;   */
 /* crea la clase header__texto: alinea el texto al centro, dale el color a las letras usando la variable (--blanco), y con un margin-top de 15rem*/
-
+.header{
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.header__texto{
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 15rem;
+}
 
 /* crea la clase barra: agregale un display del tipo flex, alinea los items en el centro, y justifica el contenido con un space-between. agrega un padding-top de 4rem*/
 
-
+.barra{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
 /*crea la clase logo: dale el color blanco a las letras, usando la variable --blanco*/
-
+.logo{
+    text-decoration: var(--blanco);
+}
 
 .logo__nombre {
     font-weight: 400;
@@ -98,15 +116,26 @@ su altura sera de 60rem. Agrega luego este codigo:
     font-weight: 700;
 }
 /* crea la clase navegacion: usa un display flex, con un gap de 2rem*/
-
-
+.navegacion{
+    display: flex;
+    gap: 2rem;
+}
 
 /* crea la clase navegacion__enlace: usa un display block, alinea el texto al centro, y cambia el tamaño de la fuente a 1.8rem y al color de la letra en blanco*/
-
+.navegacion__enlace{
+    display: block;
+    align-items: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
 
 /* crea la clase contenido-principal: el display grid, y usa el template-columns para pasar 2 parametros, uno de 1fr y otro de 0.5fr.
-dale un gap a las columnas de 4rem
-*/
+dale un gap a las columnas de 4rem*/
+.contenido-principal{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 4rem;
+}
 
 
 .entrada {
@@ -125,8 +154,18 @@ padding: 1rem 3rem;
 text-transform: uppercase;
 font-weight: 700;
 margin-bottom: 2rem;
+border: none;*/
+.boton{
+    display: inline-block;
+    font: var(--fuenteHeading --blanco);
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+text-transform: uppercase;
+font-weight: 700;
+margin-bottom: 2rem;
 border: none;
-*/
+}
 
 
 .boton:hover {
@@ -136,9 +175,13 @@ border: none;
 
 
 /*crea la clase boton--primario: dale un color de fondo usando tu color --negro*/
-
+.boton--primario{
+    background-color:var(--negro)
+}
 /*crea la clase boton--secundario: dale un color de fondo usando tu color --secundario*/
-
+.boton--secundario{
+    background-color: var(--secundario);
+}
 .cursos {
     list-style: none;
 }
@@ -164,17 +207,30 @@ border: none;
 }
 
 /*Crea la clase footer: dale un fondo usando la variable negro, un padding-bottom de 3rem y un margin superior de 4rem*/
-
+.footer{
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
 
 /** Sobre Nosotros **/
 /* crea la clase sobre-nosotros: dale un display del tipo grid, y usa el template columns con un repeat de (2,1fr), crea el column gap de 2rem*/
-
+.sobre-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2.1fr);
+    column-gap: 2rem;
+}
 
 /** Cursos **/
 /* crea la clase curso: dale un display grid, con un template columns de 1fr y 2fr, un gap de 2rem, y un border-bottom de 1 px solid con el color de tu variable --gris.
 por ultimo, agrega esta linea: 
-padding: 3rem 0; 
-*/
+padding: 3rem 0; */
+.curso{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-bottom: 1px solid var(--gris);
+    padding: 3rem 0;
+}
 
 
 .curso:last-of-type {
@@ -195,10 +251,19 @@ padding: 3rem 0;
 /** Contacto **/
 /* cre la clase contacto-bg: dale la imagen de fondo usando la imagen sobre-nosotros (averigua como usar el metodo url() para poner una imagen en css)
 dale una altura de 40rem, un background-size cover y background-repeat que sea no-repeat */
-
+.contacto-bg{
+background-image:url(img/sobre-nosotros.jpg);
+size: 40rem;
+background-size: cover;
+background-repeat: no-repeat;
+}
 /* crea la clase formulario: dale un fondo con la variable --blanco, un margin de: -5rem auto 0 auto
 agrega que su ancho sea del 95% y que el padding sea de 5rem*/
-
+.form{
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    padding: 5rem;
+}
 .campo {
     display: flex;
     margin-bottom: 2rem;
