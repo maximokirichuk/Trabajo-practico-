@@ -12,7 +12,7 @@
 --gris:grey;
 --negro:black;
 --primario: rgb(34, 46, 136);
---secundario:rgb(28, 100, 182);
+--secundario:rgb(121, 35, 4);
 }
 
 /*! DESDE AQUI, NO TOQUES NADA!!!*/
@@ -84,7 +84,8 @@ su altura sera de 60rem. Agrega luego este codigo:
     background-position: center center;   */
 /* crea la clase header__texto: alinea el texto al centro, dale el color a las letras usando la variable (--blanco), y con un margin-top de 15rem*/
 .header{
-background-image: url(img/banner-barberia.jpg);
+
+    background-image: url(../img/banner-barberia.jpg);
     height: 60rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -123,7 +124,7 @@ background-image: url(img/banner-barberia.jpg);
 }
 
 /* crea la clase navegacion__enlace: usa un display block, alinea el texto al centro, y cambia el tamaño de la fuente a 1.8rem y al color de la letra en blanco*/
-.navegacion__enlace{
+.navegacion_enlace{
     display: block;
     align-items: center;
     font-size: 1.8rem;
@@ -158,7 +159,8 @@ margin-bottom: 2rem;
 border: none;*/
 .boton{
     display: inline-block;
-    font: var(--fuenteHeading --blanco);
+    font: var(--fuenteHeading);
+    color: var(--blanco);
     align-items: center;
     font-size: 1.8rem;
     padding: 1rem 3rem;
@@ -287,3 +289,14 @@ agrega que su ancho sea del 95% y que el padding sea de 5rem*/
 }
 
 /*PUNTOS EXTRA: podes crear tus propios estilos y tambien usar @keyframes para darle efecto a la pagina!!!*/
+
+@keyframes agrandar{
+    from{max-width:(2rem);}
+    to{min-width:none;}
+}
+#container-agrandar:hover{
+    animation-duration: 3s;
+}
+
+ body{
+    background-color: rgb(129, 88, 74);}
