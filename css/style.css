@@ -185,7 +185,7 @@ border: none;
 .boton--secundario{
     background-color: var(--secundario);
 }
-.cursos {
+.curso {
     list-style: none;
 }
 
@@ -235,20 +235,25 @@ padding: 3rem 0; */
     padding: 3rem 0;
 }
 
-
 .curso:last-of-type {
-   border: none;
-}
+   border: none;}
 .curso__label {
     font-family: var(--fuenteHeading);
     font-weight: bold;
 }
-.curso__info {
+.curso__informacion{
     font-weight: normal;
+    margin-top: 0;
+    margin-left: 2rem; 
 }
 .curso__label,
 .curso__info {
     font-size: 2rem;
+}
+.curso__imagen{
+    display: block;
+    width: 50rem;
+    object-fit: contain;
 }
 
 /** Contacto **/
@@ -290,13 +295,12 @@ agrega que su ancho sea del 95% y que el padding sea de 5rem*/
 
 /*PUNTOS EXTRA: podes crear tus propios estilos y tambien usar @keyframes para darle efecto a la pagina!!!*/
 
-@keyframes agrandar{
-    from{max-width:(2rem);}
-    to{min-width:none;}
+@keyframes trasladar{
+    from{transform:translateX(1800px) scaleX(-1);}
+    to{transform:translateX(-200px)scaleX(-1);}
 }
-#container-agrandar:hover{
-    animation-duration: 3s;
-}
-
- body{
-    background-color: rgb(129, 88, 74);}
+#tijeras{
+    width: 300px;
+    animation: 10s linear forwards;
+    animation-name: trasladar;
+    }
