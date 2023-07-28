@@ -12,7 +12,7 @@
 --gris:grey;
 --negro:black;
 --primario: rgb(34, 46, 136);
---secundario:rgb(121, 35, 4);
+--secundario:rgb(165, 35, 35);
 }
 
 /*! DESDE AQUI, NO TOQUES NADA!!!*/
@@ -174,8 +174,16 @@ border: none;
 .boton:hover {
     cursor: pointer;
     /* AÑADE UN EFECTO A TU GUSTO (USANDO UN @KEYFRAMES u otros)*/
+} 
+@keyframes escalar {
+	from{transform: scale(10rem);}
+	to{transform: scale(15rem);} 
 }
 
+#container-escalar:hover{
+	cursor: pointer;
+	animation: escalar 3s infinite;
+}
 
 /*crea la clase boton--primario: dale un color de fondo usando tu color --negro*/
 .boton--primario{
@@ -260,7 +268,7 @@ padding: 3rem 0; */
 /* cre la clase contacto-bg: dale la imagen de fondo usando la imagen sobre-nosotros (averigua como usar el metodo url() para poner una imagen en css)
 dale una altura de 40rem, un background-size cover y background-repeat que sea no-repeat */
 .contacto-bg{
-background-image:url(img/sobre-nosotros.jpg);
+background-image:url(..img/sobre-nosotros.jpg);
 size: 40rem;
 background-size: cover;
 background-repeat: no-repeat;
@@ -301,6 +309,8 @@ agrega que su ancho sea del 95% y que el padding sea de 5rem*/
 }
 #tijeras{
     width: 300px;
-    animation: 10s linear forwards;
+    animation: 20s linear forwards;
     animation-name: trasladar;
     }
+ 
+    
