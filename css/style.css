@@ -107,7 +107,7 @@ su altura sera de 60rem. Agrega luego este codigo:
 }
 /*crea la clase logo: dale el color blanco a las letras, usando la variable --blanco*/
 .logo{
-    text-decoration: var(--blanco);
+   color: var(--blanco);
 }
 
 .logo__nombre {
@@ -175,15 +175,13 @@ border: none;
     cursor: pointer;
     /* AÑADE UN EFECTO A TU GUSTO (USANDO UN @KEYFRAMES u otros)*/
 } 
-@keyframes escalar {
-	from{transform: scale(10rem);}
-	to{transform: scale(15rem);} 
-}
-
+@keyframes escalar{
+    from{transform: scale(1);}
+    to{transform: scale(1.3);}}
 #container-escalar:hover{
-	cursor: pointer;
-	animation: escalar 3s infinite;
-}
+    animation-name: escalar;
+    animation-duration:5s;
+    cursor: pointer;}
 
 /*crea la clase boton--primario: dale un color de fondo usando tu color --negro*/
 .boton--primario{
